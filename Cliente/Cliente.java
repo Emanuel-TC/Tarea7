@@ -48,6 +48,7 @@ public class Cliente {
 
         // se debe verificar si hubo error
         if (conexion.getResponseCode() == 200) { // no hubo error
+            System.out.println("OK ");
             BufferedReader Entrada = new BufferedReader(new InputStreamReader((conexion.getInputStream())));
             String respuesta;
             // el metodo web regresa una string en formato JSON
